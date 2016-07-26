@@ -1,0 +1,490 @@
+/* CSS Document */
+
+.v6 { font-size:10px; font-family:Verdana,Arial; color:#909090; font-weight:300; font-style:normal; text-decoration:none }
+.v7 { font-size:10px; font-family:Verdana,Arial; color:#000050; font-weight:300; font-style:normal; text-decoration:none }
+.v8 { font-size:13px; font-family:Verdana,Arial; color:#000050; font-weight:300; font-style:normal; text-decoration:none }
+.v9 { font-size:11px; font-family:Verdana,Arial; color:#000050; font-weight:300; font-style:normal; text-decoration:none }
+.v10 { font-size:10px; font-family:Verdana,Arial; color:#ffffff; font-weight:300; font-style:normal; text-decoration:none }
+.v11 { font-size:14px; font-family:Verdana,Arial; color:#0000b0; font-weight:bold; font-style:normal; text-decoration:none }
+
+.box { position: relative;
+    padding: 10px 40px;
+    margin: 0 auto;
+    float: left;
+    border-radius: 10px;
+    font-family: 'Helvetica', cursive;
+    font-size: 22px;
+    color: #FFF;
+    text-decoration: none;  
+    background-color: #3498DB;
+    border-bottom: 5px solid #2980B9;
+    text-shadow: 0px -2px #2980B9;
+    /* Animation */
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+  cursor:pointer;
+}
+.box:hover.box:focus {
+    text-decoration: none;
+    color: #fff;
+    cursor:pointer;
+}
+.box:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+
+.menutext {font-size:10px; font-family:Verdana,Arial; color:#ffffff; font-weight:bold; font-style:normal; text-decoration:none}
+
+.prdtbl {font-size:10px; font-family:Verdana,Arial; color:#000000; font-weight:300; font-style:normal; text-decoration:none}
+.h1class { font-size:12px; font-family:Verdana,Arial; color:#000000; font-weight:bold; font-style:normal; text-decoration:none }
+.h11class { font-size:14px; font-family:Verdana,Arial; color:#000000; font-weight:bold; font-style:normal; text-decoration:none }
+.h2class { font-size:11px; font-family:Verdana,Arial; color:#C0C0C0; font-weight:bold; font-style:normal; text-decoration:none }
+.h3class { font-size:11px; font-family:Verdana,Arial; color:#FFFFFF; font-weight:bold; font-style:normal; text-decoration:none }
+.h4class { font-size:14px; font-family:Verdana,Arial; color:#FFFFFF; font-weight:normal; font-style:italic; text-decoration:none }
+.h5class { font-size:18px; font-family:Verdana,Arial; color:#FFFFFF; font-weight:normal; font-style:normal; text-decoration:none }
+.h6class { font-size:18px; font-family:Verdana,Arial; color:#FFFFFF; font-weight:bold; font-style:italic; text-decoration:none }
+.itemhead {FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #122c6a; FONT-FAMILY: Verdana,Tahoma}
+.pdescr {font-size:10px; font-family:Verdana,Arial; color:#505050; font-weight:300; font-style:normal; text-decoration:none}
+.pathcls { font-size:10px; font-family:Verdana,Arial; color:#C0C0C0; font-weight:300; font-style:normal; text-decoration:none }
+.codes { font-size:11px; font-family:Verdana,Arial; color:#000070; font-weight:normal; font-style:normal; text-decoration:none }
+.codesc { font-size:11px; font-family:Verdana,Arial; color:#008000; font-weight:normal; font-style:normal; text-decoration:none }
+.v12 { font-size:11px; font-family:Verdana,Arial; color:#A0A0A0; font-weight:bold; font-style:normal; text-decoration:none }
+.codekw { font-size:11px; font-family:Verdana,Arial; color:#0000f0; font-weight:normal; font-style:normal; text-decoration:none }
+.tgb { font-size:11px; font-family:Verdana,Arial; color:#000000; font-weight:300; font-style:normal; background-color:#F0F0F0; border:3px solid #F0F0F0 }
+a.proplink:link, a.proplink:visited { color: #0000ff; text-decoration : underline }
+a.proplink:hover { color: #C00000;}
+.examples { margin: 12px 0 12px 15px; padding: 2px; border: solid 2px #AAAACC; }
+.uploadArea { margin: 0 0 0 10px; padding: 2px; border: solid 2px #AAAACC; width:auto;  cursor: pointer;}
+.codes1 { font-size:11px; font-family:Tahoma,Verdana,Arial; color:#000090; font-weight:normal; font-style:normal; text-decoration:none }
+
+
+.clr {
+	clear: both;
+}
+
+.topdiv {
+	border: solid 1px #ccc;
+	margin: 10 auto;
+	padding: 3px;
+	width: auto;
+	height: auto;
+	  background-image:url('bg.png');
+background-repeat:no-repeat;
+background-size:contain;
+background-position:center;
+BACKGROUND-COLOR:#1F2A40;
+}
+
+.pathtd {
+	padding: 0 0 4px 0;
+}
+
+.contentdiv {
+	margin: 0 auto;
+	padding: 0px;
+	width: 75%;
+	float: left;
+}
+
+.contenttd {
+	padding: 0 7px 0 7px;
+}
+
+.rightdiv {
+	border: solid 1px #ccc;
+	margin: 0 auto;
+	padding: 1px;
+	width: 22%;
+	float: right;
+}
+
+.user1div {
+	width: 199px;
+	padding: 2px;
+	float: left;
+}
+
+.headerdiv {
+	padding: 3px;
+	background: #ebebff;
+	font-size: 12px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.outline {
+  border: 1px solid #cccccc;
+  background: #ffffff;
+	padding: 2px;
+}
+
+.pathway {
+	color: #white;
+	font-weight:bold;
+}
+
+a.pathway:link, a.pathway:visited {
+	color: #ffffff;
+	font-weight:bold;
+}
+
+a.pathway:hover {
+	color: #C4C4C4;
+}
+
+#buttons {
+	float: right;
+	margin: 0px;
+	padding: 0px;
+	width: 50%;
+}
+
+#search_outer {
+	float: left;
+	width: 100%;
+}
+
+#search_inner {
+  border: 1px solid #cccccc;
+	padding: 0px;
+  height: 21px !important;
+  height: 23px;
+  overflow: hidden;
+}
+
+#search_inner form {
+  padding: 0;
+  margin: 0;
+}
+
+#search_inner .inputbox {
+	border: 0px;
+	padding: 3px 3px 3px 5px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 11px;
+	color: #ff6600;
+}
+
+#active_menu {
+	color:#ffff00;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+a#active_menu:hover {
+	color: #C4C4C4;
+}
+
+.maintitle {
+	color: #ffffff;
+	font-style: italic;
+	font-size: 12pt;
+	padding-left: 15px;
+	padding-top: 5px;
+	font-family : "Verdana";
+	font-weight : bold;
+}
+
+.maintitle1 {
+	color: #ffffff;
+	font-style: italic;
+	font-size: 10pt;
+	padding-left: 15px;
+	padding-top: 5px;
+	font-family : "Verdana";
+	font-weight : bold;
+}
+
+.error {
+  font-style: italic;
+  text-transform: uppercase;
+  padding: 5px;
+  color: #cccccc;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.pagefooter {
+background: #5572B0; border: solid 1px #375793; margin: 12px 0 0 0; padding: 1px; font-weight: bold;
+}
+
+.pagefooter a:link, .pagefooter a:visited {
+color: #D0D0D0;
+font-weight: bold;
+}
+
+ul
+{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+li
+{
+line-height: 15px;
+padding-left: 15px;
+padding-top: 0px;
+background-image: url(../images/arrow.gif) ;
+background-repeat: no-repeat;
+background-position: 0px 3px;
+}
+
+
+td {
+	text-align: left;
+	font-size: 11px;
+}
+
+body {
+	margin: 10px 0px 10px 0px;
+	height: 100%;
+	padding: 0px;
+	font-family: Arial, Helvetica, Sans Serif;
+	font-size: 11px;
+	color: #ffffff;
+	background: #F3F3F5;
+}
+
+/* Joomla core stuff */
+a:link, a:visited {
+	color: #ffffff; text-decoration: none; font-weight: bold;
+}
+
+a:hover {
+	color: #ffffff;	text-decoration: underline; font-weight: bold;
+}
+
+table.inexamplediv {
+	width: 95%;
+	padding-left: 20px;
+}
+
+table.contentpaneopen {
+	width: 100%;
+	padding: 0px;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	margin: 0px;
+}
+
+table.contentpaneopen td {
+   padding-right: 5px;
+}
+
+/*
+table.contentpaneopen td.componentheading {
+	padding-left: 4px;
+}
+
+table.contentpane {
+  width: 100%;
+	padding: 0px;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	margin: 0px;
+}
+
+table.contentpane td {
+	margin: 0px;
+	padding: 0px;
+}
+
+table.contentpane td.componentheading {
+	padding-left: 4px;
+}
+*/
+
+/*
+.button {
+  color: #ff6600;
+  font-family: Arial, Hevlvetica, sans-serif;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  border: 3px double #cccccc;
+  width: auto;
+  background: url(../images/button_bg.png) repeat-x;
+  padding: 0px 5px;
+  line-height: 18px !important;
+  line-height: 16px;
+  height: 26px !important;
+  height: 24px;
+  margin: 1px;
+}
+*/
+
+.inputbox {
+	padding: 2px;
+	border:solid 1px #cccccc;
+	background-color: #ffffff;
+}
+
+.contentheading {
+	height: 40px;
+	color: #ffffff;
+	text-indent: 15px;
+	font-weight: bold;
+	font-size: 18px;
+	
+}
+
+table.searchinto {
+	width: 100%;
+}
+
+table.searchintro td {
+	font-weight: bold;
+}
+
+table.moduletable {
+	width: 100%;
+	margin-bottom: 0px;
+	padding: 0px;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+table.moduletable th {
+	background-color: #ffffff;
+	color: #666666;
+	text-align: left;
+	padding-top: 4px;
+	padding-left: 4px;
+	height: 21px;
+	font-weight: bold;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+table.moduletable td {
+	font-size: 11px;
+	padding: 0px;
+	margin: 0px;
+	font-weight: normal;
+}
+
+a.mainlevel:link, a.mainlevel:visited {
+	display: block;
+	background: url(../images/menu_bg.gif) no-repeat;
+	vertical-align: middle;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: left;
+	padding-top: 4px;
+	padding-left: 20px;
+	height:19px !important;
+	height: 23px;
+	width: 100%;
+	text-decoration: none;
+}
+
+a.mainlevel:hover {
+	background-position: 0px -23px;
+	text-decoration: none;
+	color: #E4E3E4;
+}
+
+a.sublevel:link, a.sublevel:visited {
+	padding-left: 1px;
+	vertical-align: middle;
+	font-size: 11px;
+	color: #ffffff;
+	text-align: left;
+}
+
+a.sublevel:hover {
+	color: #C3C4C4;
+	text-decoration: none;
+}
+
+.code {
+	background-color: #ddd;
+	border: 1px solid #bbb;
+}
+
+form {
+/* removes space below form elements */
+	margin: 0;
+ 	padding: 0;
+ 	width:auto;
+}
+
+
+.tabs {
+	margin:0px 0 0 0px;
+	background:#ffffff;
+	overflow:hidden;
+	padding:1px;
+}
+
+ul.i-tab {
+	list-style:none;
+	overflow:hidden;
+	height:105px;
+	padding:0px; 
+	background:#ffffff;
+}
+			
+ul.i-tab li {
+	padding:1px 1px 0px 1px;
+	margin:1px;
+	float:left;
+    text-align:center;
+   	font-size:14px;
+   	font-family:Tahoma,Verdana,Arial;
+   	color:#ffffff;
+   	font-weight:bold;
+   	background:#AAAACC;
+   	cursor:pointer;
+}
+			
+ul.i-tab li:hover {
+	background:#ffffff;
+   	color:#AAAACC;
+	cursor:pointer;
+	border: solid 2px #bb0000;
+}
+
+ul.i-tab li.active {
+	background:#ffffff;
+   	color:#AAAACC;
+	border: solid 2px #bb0000;
+}
+			
+ul.tab-content {
+	list-style:none;
+	margin:0px;
+	padding:1px;
+}	
+			
+ul.tab-content li {
+	display:block;
+	padding:2px;
+	margin:0px;
+	background:#dfdfe5;
+	display:none;
+}	
+
+#upload-file-container {
+   background: url(superanime.gif) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:400px;
+  width: auto;
+  cursor: pointer;
+}
+
+#upload-file-container input {
+   filter: alpha(opacity=0);
+   opacity: 0;
+   width:100%;
+   height:100%;
+  cursor: pointer;
+}
+

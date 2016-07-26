@@ -1,1 +1,360 @@
-hello world
+<!--?xml version="1.0" encoding="iso-8859-1"?-->
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>Opóźniony samolot. Rozpoznawanie</title>
+<meta name="title" content="Opóźniony samolot. Rozpoznawanie">
+<meta name="author" content="Volodymyr Ostruk">
+<meta name="description" content="Opóźniony samolot. Rozpoznawanie informacji na biletach lotniczych">
+<meta name="keywords" content="barcode read decoder images bmp jpg jpeg gif tiff pdf Code 128 EAN UPC DataMatrix PDF417 QRCode AztecCode, barcode decoder reader image scanner">
+<meta name="Generator" content="BringAI. Copyright (C) All rights served">
+<meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width"/>
+	<link rel="shortcut icon" href="images/favicons.png">
+	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="images/template_css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<center>
+<div class="topdiv">
+
+<table  border="0" cellpadding="0" cellspacing="0" align="center" width="auto">
+
+<tbody>
+
+
+<tr>
+
+<td valign="top">
+<!-- CONTENT START -->
+<table border="0" cellpadding="0" cellspacing="0" width="auto">
+<tbody><tr>
+<td class="contenttd" valign="top">				<table class="contentpaneopen">
+			<tbody><tr>
+							<td> <img src="images/logo.png" alt="" height="80" width="100"> </td>
+								<td class="contentheading" width="auto">
+					 Wybierz bilet dla rozpoznawania lub zrób jego zdjęcie	</td>
+							</tr>
+			</tbody></table>
+			
+		<table class="contentpaneopen">
+				<tbody><tr>
+			<td colspan="2" valign="top">
+				<script src="images/jquery-min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        $(function() {
+            $('ul.i-tab li:first').addClass('active');
+            $('ul.tab-content li:first').css('display', 'block');
+            $('ul.i-tab').delegate('li:not(.active)', 'click', function() {
+                $(this).addClass('active').siblings().removeClass('active')
+			.parents('.tabs').find('ul.tab-content li').hide()
+			.eq($(this).index()).fadeIn('slow');
+            })
+        })
+	
+	
+	</script>
+	
+<script language="JavaScript">
+<!--
+
+    var bFirst = 1;
+
+    function UpdateBarcodeType() {
+        var bartype = 0;
+        if (document.DecodingForm.c1.checked)
+            bartype |= 0x00000001;
+        if (document.DecodingForm.c2.checked)
+            bartype |= 0x00000002;
+        if (document.DecodingForm.c3.checked)
+            bartype |= 0x00000020;
+        if (document.DecodingForm.c4.checked)
+            bartype |= 0x00000004;
+        if (document.DecodingForm.c5.checked)
+            bartype |= 0x00000200;
+        if (document.DecodingForm.c6.checked)
+            bartype |= 0x00000400;
+        if (document.DecodingForm.c7.checked)
+            bartype |= 0x00000040;
+        if (document.DecodingForm.c16.checked)
+            bartype |= 0x00000800;
+        if (document.DecodingForm.c17.checked)
+            bartype |= 0x00001000;
+        if (document.DecodingForm.c18.checked)
+            bartype |= 0x00002000;
+        if (document.DecodingForm.c19.checked)
+            bartype |= 0x00004000;
+        if (document.DecodingForm.c20.checked)
+            bartype |= 0x00008000;
+
+        if (document.DecodingForm.c8.checked)
+            bartype |= 0x00000008;
+        if (document.DecodingForm.c9.checked)
+            bartype |= 0x00000010;
+        if (document.DecodingForm.c10.checked)
+            bartype |= 0x00000080;
+        if (document.DecodingForm.c11.checked)
+            bartype |= 0x00000100;
+
+        if (document.DecodingForm.c12.checked || document.DecodingForm.pdf417micro.checked)
+            bartype |= 0x20000000;
+
+        if (document.DecodingForm.c13.checked)
+            bartype |= 0x01000000;
+        if (document.DecodingForm.c14.checked)
+            bartype |= 0x02000000;
+
+        if (document.DecodingForm.c15.checked)
+            bartype |= 0x10000000;
+        if (document.DecodingForm.c25.checked)
+            bartype |= 0x04000000;
+
+        if (document.DecodingForm.c21.checked || document.DecodingForm.qrmicro.checked)
+            bartype |= 0x40000000;
+        if (document.DecodingForm.c22.checked)
+            bartype |= 0x08000000;
+
+        if (document.DecodingForm.c23.checked)
+            bartype |= 0x80000000;
+        if (document.DecodingForm.c24.checked)
+            bartype |= 0x00100000;
+
+        document.getElementById('bartypes').value = bartype;
+    }
+
+    function imgLoad() {
+        sFileName = document.DecodingForm.fupload1.value;
+        if (sFileName != "") {
+            shtml = "<img id='Sample' src='" + sFileName + "' width='1' height='1'></img>";
+            document.getElementById("ShowImg").innerHTML = shtml;
+        }
+    }
+
+    function IsSizeOk() {
+        var i;
+        var y = document.images;
+        for (i = 0; i < y.length; i++) {
+
+            if ((y[i].id) == 'Sample') {
+                if (y[i].fileSize > 2097152)
+                    return false;
+            }
+        }
+
+        return true;
+    }
+
+//-->
+</script>
+
+
+
+<form method="post" name="DecodingForm" action="http://online-barcode-reader.com/cgi-bin/brcgi" enctype="multipart/form-data" target="f2">
+
+
+<div class="uploadArea">
+<div id="upload-file-container">
+   <input type="file" name="photo" />
+</div>
+
+<!--<input name="fupload1" size="450" class="formitem" onchange="imgLoad();" type="file"><br><span class="v10">File limit: 2Mb. File formats: jpg, gif, png, bmp, tiff</span>
+-->
+
+</div> <br/>
+Format wyjściowy danych:
+
+<select size="1" name="sr" class="formitem">
+<option value="0">Text</option>
+<option selected="selected" value="1">Image</option>
+<!--<option value="2">XML</option>-->
+</select>
+<br>
+
+<div class="tabs" style="display: none;">
+<h1 class="h1class">Barcode Reader Settings</h1>
+
+    <ul class="i-tab">
+        <li class="active">Linear<br><img src="images/linear_tab.jpg" alt="" height="70" width="110"></li>
+        <li>QRCode<br><img src="images/qrcode_tab.jpg" alt="" height="70" width="110"></li>
+        <li>DataMatrix<br><img src="images/datamatrix_tab.jpg" alt="" height="70" width="110"></li>
+        <li>PDF417<br><img src="images/pdf417_tab.jpg" alt="" height="70" width="110"></li>
+        <li>AztecCode<br><img src="images/azteccode_tab.jpg" alt="" height="70" width="110"></li>
+    </ul>
+    <ul class="tab-content" >
+        <!-- TAB 1 content Start -->
+        <li style="display: block;">
+            <table border="0" cellpadding="2" cellspacing="0" width="auto">
+	        <tbody><tr>
+	        <td><input checked="checked" name="c1" type="checkbox">Code-128</td>
+	        <td><input checked="checked" name="c2" type="checkbox">Code-39</td>
+        	<td><input checked="checked" name="c3" type="checkbox">Codabar</td>
+	        <td><input checked="checked" name="c4" type="checkbox">Interleaved 2/5</td>
+	        <td><input checked="checked" name="c5" type="checkbox">Industrial 2/5</td>
+	        <td><input checked="checked" name="c6" type="checkbox">Code 93</td>
+	        <td><input name="c7" type="checkbox">Code 11</td>
+	        </tr>
+	        <tr>
+	        <td><input checked="checked" name="c8" type="checkbox">EAN-13</td>
+	        <td><input checked="checked" name="c9" type="checkbox">EAN-8</td>
+	        <td><input checked="checked" name="c10" type="checkbox">UPC-A</td>
+	        <td><input name="c11" type="checkbox">UPC-E</td>
+	        <td><input name="c16" type="checkbox">DataBar (RSS-14)</td>
+	        <td colspan="2"><input name="c17" type="checkbox">DataBar Limited</td>
+	        </tr>
+	        <tr>
+	        <td colspan="2"><input name="c18" type="checkbox">DataBar Stacked</td>
+	        <td colspan="2"><input name="c19" type="checkbox">DataBar Expanded</td>
+	        <td colspan="3"><input name="c20" type="checkbox">DataBar Expanded Stacked</td>
+	        </tr>
+	        <tr>
+	        <td colspan="7"><input name="c13" type="checkbox">Linear Unrecognized</td>
+	        </tr>
+	        <tr>
+	        <td colspan="3">Quantity: <input name="lnum" value="1" size="5" class="formitem" type="text"></td>
+	        <td colspan="3">Speed: <select size="1" name="lspeed" class="formitem"><option value="1">Fast</option><option selected="selected" value="0">Normal</option><option value="2">Slow</option></select></td>
+	        <td></td>
+	        </tr>
+	        </tbody></table>
+        </li>
+        <!-- TAB 1 content Stop -->
+
+        <!-- TAB 2 content Start -->
+        <li>
+            <table border="0" cellpadding="2" cellspacing="0" width="100%">
+	        <tbody><tr>
+	        <td width="auto"><input checked="checked" name="c21" type="checkbox">Find QRCode</td>
+	        <td>Quantity: <input name="qrnum" value="1" size="5" class="formitem" type="text"></td>
+	        </tr>
+	        <tr>
+	        <td width="auto"><input name="c22" type="checkbox">QRCode Unrecognized</td>
+	        <td>Speed: <select size="1" name="qrspeed" class="formitem"><option value="1">Fast</option><option selected="selected" value="0">Normal</option><option value="2">Slow</option></select></td>
+	        </tr>
+	        <tr>
+	        <td width="auto"><input name="qrmicro" type="checkbox">Micro QRCode</td>
+	        <td></td>
+	        </tr>
+            </tbody></table>
+        </li>
+        <!-- TAB 2 content Stop -->
+
+        <!-- Tab 3 content Start -->
+        <li>
+            <table border="0" cellpadding="2" cellspacing="0" width="100%">
+	        <tbody><tr>
+	        <td width="auto"><input checked="checked" name="c15" type="checkbox">Find DataMatrix</td>
+	        <td>Quantity: <input name="dmnum" value="1" size="5" class="formitem" type="text"></td>
+	        </tr>
+	        <tr>
+	        <td width="auto"><input name="c25" type="checkbox">DataMatrix Unrecognized</td>
+	        <td>Speed: <select size="1" name="dmspeed" class="formitem"><option value="1">Fast</option><option selected="selected" value="0">Normal</option><option value="2">Slow</option></select></td>
+	        </tr>
+            </tbody></table>
+        </li>
+        <!-- Tab 3 content Stop -->
+           
+        <!-- TAB 4 content Start -->
+        <li>
+            <table border="0" cellpadding="2" cellspacing="0" width="100%">
+	        <tbody><tr>
+	        <td width="auto"><input checked="checked" name="c12" type="checkbox">Find PDF417</td>
+	        <td>Quantity: <input name="pdf417num" value="1" size="5" class="formitem" type="text"></td>
+	        </tr>
+	        <tr>
+	        <td width="auto"><input name="c14" type="checkbox">PDF417 Unrecognized</td>
+	        <td>Speed: <select size="1" name="pdf417speed" class="formitem"><option value="1">Fast</option><option selected="selected" value="0">Normal</option><option value="2">Slow</option></select></td>
+	        </tr>
+	        <tr>
+	        <td width="auto"><input name="pdf417micro" type="checkbox">Micro PDF417</td>
+	        <td></td>
+	        </tr>
+            </tbody></table>
+        </li>
+        <!-- TAB 4 content Stop -->
+        
+        <!-- TAB 5 content Start -->
+        <li>
+            <table border="0" cellpadding="2" cellspacing="0" width="100%">
+	        <tbody><tr>
+	        <td width="auto"><input checked="checked" name="c23" type="checkbox">Find AztecCode</td>
+	        <td>Quantity: <input name="aznum" value="1" size="5" class="formitem" type="text"></td>
+	        </tr>
+	        <tr>
+	        <td width="auto"><input name="c24" type="checkbox">AztecCode Unrecognized</td>
+	        <td>Speed: <select size="1" name="azspeed" class="formitem"><option value="1">Fast</option><option selected="selected" value="0">Normal</option><option value="2">Slow</option></select></td>
+	        </tr>
+            </tbody></table>
+        </li>
+        <!-- TAB 5 content Stop -->
+
+       </ul>
+</div>
+
+<br>
+<br><div style="width: 100%;
+text-align: center;">
+<script language="JavaScript">
+    document.write("<input type='button' value='Wyznacz Informacje na obrazku ' class='box' onClick=\"if(!IsSizeOk()) alert('File size is more than 2Mb'); else {UpdateBarcodeType(); document.getElementById('decprogress').innerHTML='Decoding ... Please wait';bFirst=0;document.DecodingForm.submit();}\" />");
+</script>
+</div>
+<!--
+<input value="Get Image Information" class="box" onclick="if(!IsSizeOk()) alert('File size is more than 2Mb'); else {UpdateBarcodeType(); document.getElementById('decprogress').innerHTML='Decoding ... Please wait';bFirst=0;document.DecodingForm.submit();}" type="button">
+
+<noscript>JavaScript disabled<br /><br />
+
+<input type="submit" value="   Decode image   " class="box" />
+
+</noscript>
+-->
+
+<input name="types" value="922748607" id="bartypes" type="hidden">
+<input name="showid" value="0" type="hidden">
+<input name="lverifycheck" value="0" type="hidden">
+<input name="lshowcheck" value="1" type="hidden">
+<input name="lshowstst" value="0" type="hidden">
+<input name="width" value="530" type="hidden">
+<input name="height" value="410" type="hidden">
+<input name="dminverse" value="3" type="hidden">
+</form>
+<!-- END form -->
+<br>
+<b><span id="decprogress"></span></b>
+<br>
+
+<iframe src="" style="BORDER: #A0A0A0 1pt solid; width:100%" scrolling="auto" marginwidth="1" marginheight="1" name="f2" onload="if(!bFirst) document.getElementById('decprogress').innerHTML='Done'" frameborder="0" height="200"">
+Your browser don't support frames. This page cannot be displayed.
+</iframe>
+<br><br>
+<span id="ShowImg"></span>
+
+
+
+			</td>
+		</tr>
+				</tbody></table>
+
+		<span class="article_seperator">&nbsp;</span>
+
+		</td>
+
+</tr>
+</tbody></table>
+<!-- CONTENT STOP -->
+</td>
+</tr>
+
+</tbody></table>
+
+<div class="pagefooter">
+<a href="http://www.ostruk.blogspot.com"> 2016 All Rights served. </a> Made by bringAI solutions.
+</div>
+
+</div>
+
+<p class="v6">Copyrighted 2016, BringAI consultancy, All rights reserved.</p>
+</center>
+
+
+</body></html>
