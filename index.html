@@ -8,18 +8,23 @@
 <meta name="keywords" content="barcode read decoder images bmp jpg jpeg gif tiff pdf Code 128 EAN UPC DataMatrix PDF417 QRCode AztecCode, barcode decoder reader image scanner">
 <meta name="Generator" content="BringAI. Copyright (C) All rights served">
 <meta name="robots" content="index, follow">
-  <meta name="viewport" content="width=device-width"/>
+ 
 	<link rel="shortcut icon" href="images/favicons.png">
 	
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link href="images/template_css.css" rel="stylesheet" type="text/css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
+    <script src="http://malsup.github.com/jquery.form.js"></script> 
+ 
+
 </head>
 
 <body>
 <center>
 <div class="topdiv">
 
-<table  border="0" cellpadding="0" cellspacing="0" align="center" width="auto">
+<table >
 
 <tbody>
 
@@ -28,12 +33,12 @@
 
 <td valign="top">
 <!-- CONTENT START -->
-<table border="0" cellpadding="0" cellspacing="0" width="auto">
+<table >
 <tbody><tr>
 <td class="contenttd" valign="top">				<table class="contentpaneopen">
 			<tbody><tr>
 							<td> <img src="images/logo.png" alt="" height="80" width="100"> </td>
-								<td class="contentheading" width="auto">
+								<td class="contentheading">
 					 Wybierz bilet dla rozpoznawania lub zrób jego zdjęcie	</td>
 							</tr>
 			</tbody></table>
@@ -152,7 +157,7 @@
 
 
 
-<form method="post" name="DecodingForm" action="//www.online-barcode-reader.com/cgi-bin/brcgi" enctype="multipart/form-data" target="f2">
+<form method="post" id="submitForm" name="DecodingForm" action="http://www.online-barcode-reader.com/cgi-bin/brcgi" enctype="multipart/form-data" target="f2">
 
 
 <div class="uploadArea">
@@ -164,11 +169,10 @@
 -->
 
 </div> <br/>
-Format wyjściowy danych:
 
-<select size="1" name="sr" class="formitem">
-<option value="0">Text</option>
-<option selected="selected" value="1">Image</option>
+<select size="1" style="display: none;" name="sr" class="formitem">
+<option selected="selected" value="0">Text</option>
+<option  value="1">Image</option>
 <!--<option value="2">XML</option>-->
 </select>
 <br>
@@ -186,7 +190,7 @@ Format wyjściowy danych:
     <ul class="tab-content" >
         <!-- TAB 1 content Start -->
         <li style="display: block;">
-            <table border="0" cellpadding="2" cellspacing="0" width="auto">
+            <table >
 	        <tbody><tr>
 	        <td><input checked="checked" name="c1" type="checkbox">Code-128</td>
 	        <td><input checked="checked" name="c2" type="checkbox">Code-39</td>
@@ -223,17 +227,17 @@ Format wyjściowy danych:
 
         <!-- TAB 2 content Start -->
         <li>
-            <table border="0" cellpadding="2" cellspacing="0" width="100%">
+            <table border="0" >
 	        <tbody><tr>
-	        <td width="auto"><input checked="checked" name="c21" type="checkbox">Find QRCode</td>
+	        <td ><input checked="checked" name="c21" type="checkbox">Find QRCode</td>
 	        <td>Quantity: <input name="qrnum" value="1" size="5" class="formitem" type="text"></td>
 	        </tr>
 	        <tr>
-	        <td width="auto"><input name="c22" type="checkbox">QRCode Unrecognized</td>
+	        <td ><input name="c22" type="checkbox">QRCode Unrecognized</td>
 	        <td>Speed: <select size="1" name="qrspeed" class="formitem"><option value="1">Fast</option><option selected="selected" value="0">Normal</option><option value="2">Slow</option></select></td>
 	        </tr>
 	        <tr>
-	        <td width="auto"><input name="qrmicro" type="checkbox">Micro QRCode</td>
+	        <td ><input name="qrmicro" type="checkbox">Micro QRCode</td>
 	        <td></td>
 	        </tr>
             </tbody></table>
@@ -242,13 +246,13 @@ Format wyjściowy danych:
 
         <!-- Tab 3 content Start -->
         <li>
-            <table border="0" cellpadding="2" cellspacing="0" width="100%">
+            <table border="0" >
 	        <tbody><tr>
-	        <td width="auto"><input checked="checked" name="c15" type="checkbox">Find DataMatrix</td>
+	        <td  ><input checked="checked" name="c15" type="checkbox">Find DataMatrix</td>
 	        <td>Quantity: <input name="dmnum" value="1" size="5" class="formitem" type="text"></td>
 	        </tr>
 	        <tr>
-	        <td width="auto"><input name="c25" type="checkbox">DataMatrix Unrecognized</td>
+	        <td  ><input name="c25" type="checkbox">DataMatrix Unrecognized</td>
 	        <td>Speed: <select size="1" name="dmspeed" class="formitem"><option value="1">Fast</option><option selected="selected" value="0">Normal</option><option value="2">Slow</option></select></td>
 	        </tr>
             </tbody></table>
@@ -257,17 +261,17 @@ Format wyjściowy danych:
            
         <!-- TAB 4 content Start -->
         <li>
-            <table border="0" cellpadding="2" cellspacing="0" width="100%">
+            <table border="0" >
 	        <tbody><tr>
-	        <td width="auto"><input checked="checked" name="c12" type="checkbox">Find PDF417</td>
+	        <td  ><input checked="checked" name="c12" type="checkbox">Find PDF417</td>
 	        <td>Quantity: <input name="pdf417num" value="1" size="5" class="formitem" type="text"></td>
 	        </tr>
 	        <tr>
-	        <td width="auto"><input name="c14" type="checkbox">PDF417 Unrecognized</td>
+	        <td  ><input name="c14" type="checkbox">PDF417 Unrecognized</td>
 	        <td>Speed: <select size="1" name="pdf417speed" class="formitem"><option value="1">Fast</option><option selected="selected" value="0">Normal</option><option value="2">Slow</option></select></td>
 	        </tr>
 	        <tr>
-	        <td width="auto"><input name="pdf417micro" type="checkbox">Micro PDF417</td>
+	        <td  ><input name="pdf417micro" type="checkbox">Micro PDF417</td>
 	        <td></td>
 	        </tr>
             </tbody></table>
@@ -276,13 +280,13 @@ Format wyjściowy danych:
         
         <!-- TAB 5 content Start -->
         <li>
-            <table border="0" cellpadding="2" cellspacing="0" width="100%">
+            <table>
 	        <tbody><tr>
-	        <td width="auto"><input checked="checked" name="c23" type="checkbox">Find AztecCode</td>
+	        <td ><input checked="checked" name="c23" type="checkbox">Find AztecCode</td>
 	        <td>Quantity: <input name="aznum" value="1" size="5" class="formitem" type="text"></td>
 	        </tr>
 	        <tr>
-	        <td width="auto"><input name="c24" type="checkbox">AztecCode Unrecognized</td>
+	        <td ><input name="c24" type="checkbox">AztecCode Unrecognized</td>
 	        <td>Speed: <select size="1" name="azspeed" class="formitem"><option value="1">Fast</option><option selected="selected" value="0">Normal</option><option value="2">Slow</option></select></td>
 	        </tr>
             </tbody></table>
@@ -296,7 +300,7 @@ Format wyjściowy danych:
 <br><div style="width: 100%;
 text-align: center;">
 <script language="JavaScript">
-    document.write("<input type='button' value='Wyznacz Informacje na obrazku ' class='box' onClick=\"if(!IsSizeOk()) alert('File size is more than 2Mb'); else {UpdateBarcodeType(); document.getElementById('decprogress').innerHTML='Decoding ... Please wait';bFirst=0;document.DecodingForm.submit();}\" />");
+    document.write("<input type='button' value='Wyślij' class='box' onClick=\"if(!IsSizeOk()) alert('File size is more than 2Mb'); else {UpdateBarcodeType(); document.getElementById('decprogress').innerHTML='Decoding ... Please wait';bFirst=0;document.DecodingForm.submit();}\" />");
 </script>
 </div>
 <!--
@@ -323,7 +327,7 @@ text-align: center;">
 <b><span id="decprogress"></span></b>
 <br>
 
-<iframe src="" style="BORDER: #A0A0A0 1pt solid; width:100%" scrolling="auto" marginwidth="1" marginheight="1" name="f2" onload="if(!bFirst) document.getElementById('decprogress').innerHTML='Done'" frameborder="0" height="200"">
+<iframe src="" style="BORDER: #A0A0A0 1pt solid;" scrolling="auto" marginwidth="1" marginheight="1" id="aniframe" name="f2" onload="if(!bFirst) document.getElementById('decprogress').innerHTML='Done'" frameborder="0" height="200"">
 Your browser don't support frames. This page cannot be displayed.
 </iframe>
 <br><br>
@@ -333,11 +337,11 @@ Your browser don't support frames. This page cannot be displayed.
 
 			</td>
 		</tr>
-				</tbody></table>
+	</tbody></table>
 
-		<span class="article_seperator">&nbsp;</span>
+  <span class="article_seperator">&nbsp;</span>
 
-		</td>
+</td>
 
 </tr>
 </tbody></table>
