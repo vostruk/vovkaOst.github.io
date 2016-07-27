@@ -68,7 +68,7 @@ a.proplink:hover { color: #C00000;}
 	border: solid 1px #ccc;
 	margin: 10 auto;
 	padding: 3px;
-	width: auto;
+	width: 100%;
 	height: auto;
 	  background-image:url('bg.png');
 background-repeat:no-repeat;
@@ -92,27 +92,7 @@ BACKGROUND-COLOR:#1F2A40;
 	padding: 0 7px 0 7px;
 }
 
-.rightdiv {
-	border: solid 1px #ccc;
-	margin: 0 auto;
-	padding: 1px;
-	width: 22%;
-	float: right;
-}
 
-.user1div {
-	width: 199px;
-	padding: 2px;
-	float: left;
-}
-
-.headerdiv {
-	padding: 3px;
-	background: #ebebff;
-	font-size: 12px;
-	color: #ffffff;
-	font-weight: bold;
-}
 
 .outline {
   border: 1px solid #cccccc;
@@ -141,31 +121,8 @@ a.pathway:hover {
 	width: 50%;
 }
 
-#search_outer {
-	float: left;
-	width: 100%;
-}
 
-#search_inner {
-  border: 1px solid #cccccc;
-	padding: 0px;
-  height: 21px !important;
-  height: 23px;
-  overflow: hidden;
-}
 
-#search_inner form {
-  padding: 0;
-  margin: 0;
-}
-
-#search_inner .inputbox {
-	border: 0px;
-	padding: 3px 3px 3px 5px;
-	font-family: arial, helvetica, sans-serif;
-	font-size: 11px;
-	color: #ff6600;
-}
 
 #active_menu {
 	color:#ffff00;
@@ -257,10 +214,7 @@ a:hover {
 	color: #ffffff;	text-decoration: underline; font-weight: bold;
 }
 
-table.inexamplediv {
-	width: 95%;
-	padding-left: 20px;
-}
+
 
 table.contentpaneopen {
 	width: 100%;
