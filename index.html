@@ -13,9 +13,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link href="images/template_css.css" rel="stylesheet" type="text/css">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
     <script src="http://malsup.github.com/jquery.form.js"></script> 
  
+   <script type="text/javascript">
+	$(document).ready(function() { 
+	$('#formid').on('submit', function(e) {
+		alert('sasldkfj');
+	    e.preventDefault(); // prevent native submit
+	    $(this).ajaxSubmit({
+		target: 'myResultsDiv'
+	    })
+	});
+}); 
+    </script> 
+  
 
 </head>
 
@@ -155,8 +167,7 @@
 </script>
 
 
-
-<form method="post" id="submitForm" name="DecodingForm" action="http://www.online-barcode-reader.com/cgi-bin/brcgi" enctype="multipart/form-data" target="f2">
+<form method="post" id="formid" name="DecodingForm" action="http://www.online-barcode-reader.com/cgi-bin/brcgi" enctype="multipart/form-data" target="_self">
 
 
 <div class="uploadArea">
@@ -295,13 +306,15 @@
        </ul>
 </div>
 
-<br>
-<br><div style="width: 100%;
+<br> 
+<div style="width: 100%;
 text-align: center;">
 <script language="JavaScript">
-    document.write("<input type='button' value='Wyślij' class='box' onClick=\"if(!IsSizeOk()) alert('File size is more than 2Mb'); else {UpdateBarcodeType(); document.getElementById('decprogress').innerHTML='Decoding ... Please wait';bFirst=0;document.DecodingForm.submit();}\" />");
+    document.write("<input type='submit' id='submit' value='Wyślij' class='box' onClick=\"if(!IsSizeOk()) alert('File size is more than 2Mb'); else {UpdateBarcodeType(); document.getElementById('decprogress').innerHTML='Decoding ... Please wait';bFirst=0;document.DecodingForm.submit();}\" />");
 </script>
 </div>
+
+
 <!--
 <input value="Get Image Information" class="box" onclick="if(!IsSizeOk()) alert('File size is more than 2Mb'); else {UpdateBarcodeType(); document.getElementById('decprogress').innerHTML='Decoding ... Please wait';bFirst=0;document.DecodingForm.submit();}" type="button">
 
@@ -325,8 +338,7 @@ text-align: center;">
 <br>
 <b><span id="decprogress"></span></b>
 <br>
-
-<iframe src="" style="BORDER: #A0A0A0 1pt solid;" scrolling="auto" marginwidth="1" marginheight="1" id="aniframe" name="f2" onload="if(!bFirst) document.getElementById('decprogress').innerHTML='Done'" frameborder="0" height="200"">
+<iframe src="" style="BORDER: #A0A0A0 1pt solid; display: none;" scrolling="auto" marginwidth="1" marginheight="1" id="aniframe" name="f2" onload="if(!bFirst) document.getElementById('decprogress').innerHTML='Done'" frameborder="0" height="200"">
 Your browser don't support frames. This page cannot be displayed.
 </iframe>
 <br><br>

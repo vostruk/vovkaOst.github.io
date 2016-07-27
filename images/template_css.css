@@ -1,7 +1,7 @@
 
 .box { 
     position: relative;
-    padding: 10px 40px;
+    padding: 10px 30px;
     margin: 0 0;
     float: middle;
     border-radius: 10px;
@@ -100,7 +100,7 @@ table.contentpaneopen td {
 	border: solid 1px #ccc;
 	margin: 0 0;
 	padding: 0px;
-
+  
 	height: 100%;
 	  background-image:url('bg.png');
 background-repeat:no-repeat;
